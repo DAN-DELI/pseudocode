@@ -23,7 +23,6 @@ div.form-group > input {
   margin-bottom: 12px;
 }
 
-
 button {
   display: block;
   margin: 0 auto;
@@ -44,10 +43,37 @@ button:hover {
   transition: background-color 3s, color 3s, border 3s;
 }
 
-form:hover {
-  background-color: rgb(44, 62, 80);
-  color: rgb(236, 240, 241);
-  border: 1 px solid rgb(0, 0, 0);
+/* Punto 2 */
+#mensaje {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-left: 4px solid #00796b;
+  font-family: sans-serif;
 }
 
+#mensaje:target {
+  display: block;
+}
 
+/* Punto 3*/
+form div:first-child {
+  background-color: rgb(190, 138, 138);
+  border-radius: 10px;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid:focus {
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
