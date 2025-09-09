@@ -1,3 +1,13 @@
+/* Estilos generales */
+/* Punto 9 */
+:root {
+  --color-principal: #3790cc81;
+}
+
+body {
+  background-color: var(--color-principal);
+}
+
 input {
   padding: 6px 3px;
   width: 90%;
@@ -15,12 +25,11 @@ div.form-group:first-of-type {
   padding-top: 20px;
 }
 
-
-
 div.form-group > label,
 div.form-group > input {
   display: block;
   margin-bottom: 12px;
+  border-radius: 5px;
 }
 
 button {
@@ -63,17 +72,64 @@ form div:first-child {
   border-radius: 10px;
 }
 
+/* Punto 4*/
 input:invalid,
 select:invalid {
   border: 2px solid red;
   background-color: #ffe6e6;
 }
 
+/* punto 4 que se efectuara para cuando sea valido */
 input:valid {
   border: 2px solid green;
 }
 
+/* 
 input:invalid:focus {
   outline: none;
   box-shadow: 0 0 5px red;
 }
+*/
+
+
+/* Punto 5 */ 
+input[type="email"] {
+  background-color: #f0f8ff;
+  border: 2px solid #0077cc; 
+}
+
+/* Punto 6 */
+input:focus,
+select:focus {
+  border: 4px solid green;
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Agrega tamaño al label de genero*/
+div #Genero{
+  padding: 10px;
+}
+
+/* Punto 7 */
+.titulo h1:only-of-type {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Arial Black', sans-serif;
+  color: rgb(87, 61, 61);
+} 
+
+/* Punto 8 */
+section.info p:first-of-type {
+ font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* Editar los colores para una mejor armonía visual */

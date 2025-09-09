@@ -8,6 +8,11 @@
 </head>
 <body>
 
+  <br>
+  <div class="titulo">
+  <h1>Formulario de Registro</h1>
+  </div>
+
   <!-- Punto 2. Msj con target ¡-->
 <a href="#mensaje" class="mostrar-mensaje">Haz clic para ver el mensaje</a>
 <div id="mensaje">Gracias por visitar este formulario. ¡Recuerda completar todos los campos!
@@ -24,12 +29,17 @@
     <label for="Apellido">Apellido</label>
     <input type="text" id="Apellido" required>
   </div>
+  
+  <div class="form-group">
+    <label for="email">Gmail</label>
+    <input type="email" id="gmail" required>
+  </div>
 
   <div class="form-group">
     <label for="Fecha">Fecha de Nacimiento</label>
     <input type="date" id="Fecha" required>
   </div>
-
+  
   <div class="form-group">
     <label for="Genero">Género</label>
     <select id="Genero" required>
@@ -48,9 +58,18 @@
   </div>
 
 
+
   <button class="button" type="submit">Enviar</button>
 </form>
 
 <!-- juas ¡-->
 </body>
+
+<section class="info">
+  <h2> ¿Qué sucede con los datos que ingresas? </h2>
+
+ <p>Cuando completas el formulario, tus datos se almacenan temporalmente en el sistema para ser procesados por el servidor.</p>
+  <p>El servidor valida la información y la guarda en una base de datos segura, siguiendo protocolos de protección de datos.</p>
+  <p>Una vez guardados, los datos pueden ser utilizados para generar reportes, enviar confirmaciones o realizar análisis estadísticos.</p>
+</section>
 </html>
