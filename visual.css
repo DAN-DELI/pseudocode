@@ -1,7 +1,7 @@
 /* Estilos generales */
 /* Punto 9 */
 :root {
-  --color-principal: #3790cc81;
+  --color-principal: rgb(230, 238, 245);
 }
 
 body {
@@ -17,7 +17,8 @@ form {
   margin: 20px;
   margin-top: 50px;
   width: 600px;
-  background-color: #c2c2c2;
+  margin: 0 auto;
+  background-color: rgb(245, 248, 250);
   border-radius: 10px;
 }
 
@@ -26,10 +27,12 @@ div.form-group:first-of-type {
 }
 
 div.form-group > label,
-div.form-group > input {
+div.form-group > input,
+div.form-group > select {
   display: block;
   margin-bottom: 12px;
   border-radius: 5px;
+  margin-left: 25px;
 }
 
 button {
@@ -68,8 +71,9 @@ button:hover {
 
 /* Punto 3*/
 form div:first-child {
-  background-color: rgb(190, 138, 138);
-  border-radius: 10px;
+  background-color: rgb(215, 228, 240);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* Punto 4*/
@@ -111,17 +115,34 @@ div #Genero{
   padding: 10px;
 }
 
+.datos {
+  margin-left: 25px;
+}
+
 /* Punto 7 */
 .titulo h1:only-of-type {
   text-align: center;
   margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
   font-family: 'Arial Black', sans-serif;
-  color: rgb(87, 61, 61);
+  color: rgb(255, 255, 255);
+  background-color:rgb(58, 104, 150) ;
 } 
 
 /* Punto 8 */
 section.info p:first-of-type {
  font-weight: 700;
+}
+
+/* mejora visual en el secction info */
+section.info {
+  background-color: rgb(215, 228, 240);
+  border-radius: 10px;
+  padding: 10px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
 
 
