@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="visual.css">
 </head>
 <body>
+<nav class="barra-navegacion">
+  <ul>
+    <li><a href="#paso1">Formulario</a></li>
+    <li><a href="#infomation">Información</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
 
 <div class="intro">
   <h2>¡Bienvenido al formulario de registro!</h3>
@@ -86,11 +94,37 @@
   <p>Una vez guardados, los datos pueden ser utilizados para generar reportes, enviar confirmaciones o realizar análisis estadísticos.</p>
 </section>
 
-  <button class="sombra-boton">Enviar</button>
+  <button class="sombra-boton" id="sombra-boton">Enviar</button>
 
 
 <blockquote>
   El conocimiento es poder, pero la sabiduría es saber cuándo usarlo.
 </blockquote>
+
+<div class="comentariodiv">
+  <table class="comentario-tabla">
+  <tr>
+    <td><label for="comentario">Comentario:</label></td>
+    <td><input type="text" name="comentario" placeholder="Escribe tu comentario aquí" required></td>
+  </tr>
+  <tr>
+    <td colspan="2"">
+      <button type="submit" class="boton-comentario">Enviar Comentario</button>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div class="imagen-relativa">
+  <img src="https://th.bing.com/th/id/R.f80f22e4c4e4d3c08f65b00dab7ba319?rik=tCuIsyX9sj9ycw&riu=http%3a%2f%2fwww.recreoviral.com%2fwp-content%2fuploads%2f2016%2f02%2fVAN-GOGH-3.jpg&ehk=9%2btNCQ41w%2fGBOpOhRXgF19jV6Z4xqFcAjhQ4lD9m6Ac%3d&risl=&pid=ImgRaw&r=0" alt="Imagen decorativa">
+</div>
+
+<div class="card-eliminar">
+  <button class="btn-eliminar">X</button>
+  <h3>Título de la tarjeta</h3>
+  <p>Esta es una tarjeta de ejemplo con un botón de eliminar en la esquina.</p>
+</div>
+
+
 
 </html>
