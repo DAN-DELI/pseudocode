@@ -12,10 +12,11 @@
   margin: 0 auto 20px auto;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 45px;
 }
 
 .mostrar-mensaje {
-  color: green;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 8px;
 }
@@ -34,7 +35,7 @@
 }
 
 div.juas {
-  color: green;
+  color: black;
   text-decoration: none;
   padding: 8px 12px;
   display: inline-block;
@@ -100,7 +101,7 @@ button:hover {
 
 /* Punto 3*/
 form div:first-child {
-  background-color: rgb(215, 228, 240);
+  background-color: rgb(30, 46, 97);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -116,14 +117,6 @@ select:invalid {
 input:valid {
   border: 2px solid green;
 }
-
-/* 
-input:invalid:focus {
-  outline: none;
-  box-shadow: 0 0 5px red;
-}
-*/
-
 
 /* Punto 5 */ 
 input[type="email"] {
@@ -336,8 +329,6 @@ blockquote::after {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #004080;
-  color: white;
   padding: 10px 0;
   z-index: 1000; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
@@ -353,13 +344,183 @@ blockquote::after {
 }
 
 .barra-navegacion a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .barra-navegacion a:hover {
-  color: #00ffff;
+  background-color: #0b132b96;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
 }
+
+
+/* PUNTO 19 */
+.zona-cajas {
+  position: relative;
+  width: 620px;
+  height: 220px;
+  margin-top: 50px; 
+  margin: 0 auto;
+}
+
+.caja {
+  width: 150px;
+  height: 150px;
+  color: white;
+  position: absolute;
+}
+
+.caja-1 {
+  background: #0077cc;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+}
+
+.caja-2 {
+  background: #ff5c5c;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+/* PUNTO 20 */
+.card-centrada {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.point-20 {
+  position: relative;
+  height: 220px;
+  width: 620px;
+  margin: 0 auto;
+}
+
+/* PUNTO 21 */ 
+:root {
+  --color-primario: #4A90E2;
+}
+
+h1, h2, h3 {
+  color: var(--color-primario);
+}
+
+.button,
+.boton-comentario,
+.sombra-boton {
+  background-color: var(--color-primario);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.barra-navegacion {
+  background-color: var(--color-primario);
+}
+
+/* PUNTO 22 */
+:root {
+  --color-fondo: #000000;
+  --color-texto: #ebc5c5;
+  --color-card: #0B132B;
+  --color--div: #FFCA3A;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.intro {
+  background-color: var(--color-card);
+  color: var(--color--texto);
+  border-radius: 10px;
+  border: 1px solid #ffffff20;
+}
+
+.intro ol li a {
+  color: var(--color-texto);
+}
+
+.juas {
+  background-color: var(--color--div);
+}
+
+.barra-navegacion {
+  background-color: var(--color--div);
+}
+
+form {
+  background-color: #0B132B;
+}
+
+section.info {
+  background-color: #0B132B;
+}
+
+.point-20,
+.card-eliminar {
+  color: var(--color-fondo);
+}
+
+/* PUNTO 23 */
+body {
+  background-color: var(--color-fondo, #c1452a);
+}
+
+/* PUNTO 25 */
+.card {
+  /* Variables locales */
+  --card-bg: #ea8d8d;
+  --card-border: #4A90E2;
+  --card-title: #333;
+  --card-text: #555;
+
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  color: var(--card-title);
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--card-text);
+  margin: 0;
+}
+
+/* Segunda card con variables diferentes */
+.card.roja {
+  --card-bg: #ffe5e5;
+  --card-border: #e84a5f;
+  --card-title: #b30000;
+  --card-text: #800000;
+  margin-bottom: 20px;
+}
+
+
+
+
 
